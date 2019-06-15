@@ -1,10 +1,20 @@
+    <!-- Homework ToDos:
+        Make your Fakebook prettier:
+        [X] Positionierung eures Bildes.
+        [X] Anpassung der Schrift.
+        [X] Anpassung des Hintergrundes.
+        [X] Hover-Effekt.
+        [X] Transition-Effekt.
+        [X] Wenn ihr noch weitere Ideen für das Styling bin ich sehr gespannt darauf
+    -->
+
 <!DOCTYPE html>
 
 <html lang="en">
 
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="assets/CSS/fakebook-styles.css">
+        <link rel="stylesheet" href="assets/fakebook-styles.css">
         <title>Verenas FakeBook</title>
     </head>
 
@@ -14,20 +24,19 @@
                 <h1 class="username" title="Username: Verena">Verena</h1>
                 <p class="userSubtitel">Smartninja in training</p>
                 <div class="imageHolder">
-                    <img src="assets/IMG/verena.jpg" class="profil" alt="Profile Picture of Verena">
+                    <img class="profil" src="assets/verena.jpg" alt="Profile Picture of Verena">
 
-                    <button title="Poke me!"><img class="icon" src="assets/IMG/hang-loose.png" alt="Hang Loose Icon"></button>
+                    <button title="Poke me!"><img class="icon" src="assets/hang-loose.png" alt="Hang Loose Icon"></button>
                 </div>
                 <nav>
-                    <a href="https://www.instagram.com/verenaboeke/" target="_blank" title="Link to Instagram"><img src="assets/IMG/instagram.png" alt="Icon Instagram"></a>
-                    <a href="https://github.com/VerenaBoeke/SN-WD01-CGN" target="_blank" title="Link to GitHub"><img src="assets/IMG/icon-git.png" alt="Icon GitHub"></a>
-                    <a href="mailto:verena@ich-liebe.es?subject=I%20want%20to%20say%20hello" title="Open your Mail Client"><img src="assets/IMG/icon-mail.png" alt="Icon Mail"></a>
+                    <a href="https://www.instagram.com/verenaboeke/" target="_blank" title="Link to Instagram"><img src="assets/instagram.png" alt="Icon Instagram"></a>
+                    <a href="https://github.com/VerenaBoeke/SN-WD01-CGN" target="_blank" title="Link to GitHub"><img src="assets/icon-git.png" alt="Icon GitHub"></a>
+                    <a href="mailto:verena@ich-liebe.es?subject=I%20want%20to%20say%20hello" title="Open your Mail Client"><img src="assets/icon-mail.png" alt="Icon Mail"></a>
                 </nav>
             </header>
 
-            <article>
-                <h2 class="hide">Verena Böke</h2>
-                <section class="boxFull">
+            <div class="content">
+                <div class="boxFull">
                     <h3>About me</h3>
                     <h4>Cad as duit?</h4>
                     <p>Tháinig mé ó shráidbhaile beag in aice le Hanover. Bhí mé i mo chónaí ansin ar feadh fiche bliain sular ceadaíodh dom bogadh go Cologne. Anseo táim i mo chónaí anois le beagnach deich mbliana i sean-mhainistir.</p>
@@ -35,31 +44,33 @@
                     <p>Táim ag obair ag an gceann cócaire agus ag cócaireacht agus ag ithe go mór. Tá suim agam i dtreochtaí nua bia.</p>
                     <h4>Sona sásta?</h4>
                     <p>Is cúis áthais dom rudaí nua a fhoghlaim. Bhí mé ag iarraidh cláir a fhoghlaim ar feadh i bhfad agus tá súil agam gur féidir liom céim mhór chun cinn a dhéanamh anois. Bheadh ​​sé thar a bheith iontach dá bhféadfainn obair sa ghairm seo.</p>
-                </section>
+                </div>
 
-                <img src="assets/IMG/ireland.jpg" class="full" alt="Ireland, Letterfrack">
+                <div class="boxFullImg"><img src="assets/ireland.jpg" alt="Ireland, Letterfrack"></div>
 
                 <div class="boxWrapper">
-                    <section class="boxLeft">
+                    <div class="boxLeft">
                         <h3>My hobbies</h3>
-                        <ul>
-                            <li>Archery</li>
-                            <li>volunteer firefighter</li>
-                            <li>Coding e.g. Alexa Skill</li>
-                            <li>Netflix</li>
-                            <li>Handlettering <a href="assets/DOC/handlettering-gratis-vorlagen.pdf" download><em>[PDF 1,8MB]</em></a></li>
-                        </ul>
-                    </section>
+                            <ul>
+                                <li>Archery</li>
+                                <li>volunteer firefighter</li>
+                                <li>Coding e.g. Alexa Skill</li>
+                                <li>Netflix</li>
+                                <li>Handlettering <a href="assets/handlettering-gratis-vorlagen.pdf" download><em>[PDF 1,8MB]</em></a></li>
+                            </ul>
+                    </div>
 
-                    <section class="boxRight">
+                    <div class="boxRight">
                         <h3>Inspirational Quotes</h3>
                         <div class="quote">
                             Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.
                         </div>
-                    </section>
+                    </div>
                 </div>
-
-            </article>
+                <!--<audio controls>
+                    <source src="assets/music.mp3" type="audio/mp3">
+                </audio>-->
+            </div>
             <footer class="white">
                 Made with &hearts; in 50.699330, 6.930150
             </footer>
