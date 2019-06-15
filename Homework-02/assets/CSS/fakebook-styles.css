@@ -9,7 +9,7 @@ font-family: 'Abril Fatface', cursive;
 
 
 
-/* ** HTML ** */
+/* ** TAGS ** */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -39,7 +39,7 @@ h4 {
 
 header {
     height: 230px;
-    background-image: url("background-stars.jpg");
+    background-image: url("../IMG/background-stars.jpg");
 }
 
 header nav {
@@ -138,6 +138,10 @@ button:hover {
 
 
 /* *** Classes *** */
+
+.hide {
+    display: none;
+}
 
 .boxFull {
     background-color: #F0F8FF;
