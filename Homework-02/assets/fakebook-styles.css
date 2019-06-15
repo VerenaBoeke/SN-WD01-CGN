@@ -1,16 +1,40 @@
-/* Google Fonts
+/*
+Google Fonts
 
 font-family: 'Roboto', sans-serif;
 font-family: 'Abril Fatface', cursive;
-
 */
 
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:100i,400&display=swap');
+
+
+
+/* ** HTML ** */
 
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
+}
+
+/* Headlines */
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    margin: 5px 0 30px 0;
+}
+
+h1:before, h3:before {
+    content: "//";
+    display: inline-block;
+    margin-right: 5px;
+}
+
+h4 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 16px;
+    margin: 20px 0 5px 0;
 }
 
 header {
@@ -44,47 +68,6 @@ header .userSubtitel {
     font-size: 18px;
 }
 
-.content {
-    margin: 20px 0 0 0;
-}
-
-.content a {
-    color: #C026FF;
-}
-
-.boxFull {
-    background-color: #F0F8FF;
-    margin: 20px 0 10px 0;
-    padding: 15px;
-    line-height: 19px;
-    max-width: 900px;
-}
-
-.boxFullImg {
-    background-color: #F0F8FF;
-    margin: 20px 0 10px 0;
-    padding: 0;
-    max-width: 900px;
-}
-
-.boxFullImg img {
-    width: 100%;
-}
-
-.boxLeft {
-    background-color: #F0F8FF;
-    width: 50%;
-    margin: 10px 10px 10px 0;
-    padding: 15px;
-}
-
-.boxRight {
-    background-color: #F0F8FF;
-    width: 50%;
-    margin: 10px 0 10px 10px;
-    padding: 15px;
-}
-
 footer {
     height: 50px;
     background-color: #003366;
@@ -104,65 +87,31 @@ p {
     margin: 0px;
 }
 
-
-/* Headlines */
-
-h3 {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 30px;
-    margin: 5px 0 30px 0;
+article {
+    margin: 20px 0 0 0;
 }
 
-h1:before, h3:before {
-    content: "//";
-    display: inline-block;
-    margin-right: 5px;
+article a {
+    color: #C026FF;
 }
 
-h4 {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 16px;
-    margin: 20px 0 5px 0;
-}
-
-
-/* Flex Box */
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.imageHolder {
-    position: relative;
-    margin-left:30px;
+/* Profil Picture */
+img.profil {
     height: 150px;
     width: 150px;
-    margin: -25px 0 0 30px;
-}
-
-.boxWrapper {
-    display: flex;
-}
-
-
-/* Round Profil Picture */
-
-img.profil {
     border-radius: 50%;
     border: 10px solid #fff;
 }
 
-.profil {
-    height: 150px;
-    width: 150px;
+/* Image Full Width */
+img.full {
+    margin: 20px 0 10px 0;
+    padding: 0;
+    max-width: 900px;
+    width: 100%;
 }
 
-
-/* Button */
-
+/* Button "Hang Loose" */
 button {
     position: absolute;
     border-radius: 50%;
@@ -186,8 +135,53 @@ button:hover {
     width: 35px;
 }
 
-/* Quote */
 
+
+/* *** Classes *** */
+
+.boxFull {
+    background-color: #F0F8FF;
+    margin: 20px 0 10px 0;
+    padding: 15px;
+    line-height: 19px;
+    max-width: 900px;
+}
+
+.boxLeft {
+    background-color: #F0F8FF;
+    width: 50%;
+    margin: 10px 10px 10px 0;
+    padding: 15px;
+}
+
+.boxRight {
+    background-color: #F0F8FF;
+    width: 50%;
+    margin: 10px 0 10px 10px;
+    padding: 15px;
+}
+
+/* Flex Box */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.imageHolder {
+    position: relative;
+    margin-left:30px;
+    height: 150px;
+    width: 150px;
+    margin: -25px 0 0 30px;
+}
+
+.boxWrapper {
+    display: flex;
+}
+
+/* Quote */
 .quote {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
