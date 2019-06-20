@@ -42,7 +42,8 @@ nav a {
     font-size: 22px;
     color: #fff;
     text-decoration: none;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 30px;
+    padding: 10px;
 }
 
 nav a:hover {
@@ -50,8 +51,6 @@ nav a:hover {
     color: #000;
     background-color: #fff;
     text-decoration: none;
-    margin: 0 0 0 30px;
-    padding: 10px;
 }
 
 
@@ -60,7 +59,6 @@ header {
 }
 
 article {
-    margin: 10px;
     color: #fff;
 }
 
@@ -88,12 +86,19 @@ iframe {
     margin: 0 auto;
     display: block;
     padding-bottom: 50px;
+    width: 720px;
+    height: 405px;
+    border: none;
 }
 
 svg {
     fill: #fff;
     width: 110px;
     height: 110px;
+}
+
+svg:hover{
+    fill: #BA0100;
 }
 
 footer {
@@ -116,8 +121,9 @@ footer a {
     background-image: url("../img/background.png");
     background-repeat: no-repeat;
     background-color: #BA0100;
+    background-size: 100% auto;
     max-width: 1000px;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 /* Form */
@@ -134,7 +140,7 @@ footer a {
 form {
     border: 1px solid red;
     width: 430px;
-    height: 470px;
+    height: 435px;
     margin-bottom: -500px;
     position: absolute;
     right: 30px;
@@ -172,13 +178,25 @@ input {
     height: 150px;
     border-radius: 50%;
     background-color: #790101;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    /*transition-delay: 0.1s;*/
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.circle:hover {
+  background-color: #282828;
+}
+
 .todo {
     display: flex;
     margin-top: 20px;
+}
+
+.white {
+    color: #fff;
 }
