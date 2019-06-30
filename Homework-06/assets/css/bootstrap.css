@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Walter+Turncoat&display=swap');
-
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -27,6 +31,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 *,
@@ -36,10 +42,10 @@
 }
 
 html {
-  font-family: 'Walter Turncoat', cursive;
+  font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -48,13 +54,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: font-family: 'Walter Turncoat', cursive;;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #fff;
+  color: #212529;
   text-align: left;
-  background-color: #282828;
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
@@ -75,10 +81,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-}
-
-form p {
-    color: #282828;
 }
 
 abbr[title],
@@ -196,7 +198,6 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
-  max-width: 960px;
 }
 
 svg {
@@ -227,11 +228,6 @@ label {
 
 button {
   border-radius: 0;
-  padding: 10px 20px;
-  background-color: #790101;
-  color: #fff;
-  tex-decoration: uppercase;
-  font-size: 20px;
 }
 
 button:focus {
@@ -371,27 +367,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 1.8rem;
-  position: absolute;
-  width: 405px;
-  height: 50px;
-  left: 0;
-  bottom: 10px;
-  background: rgba(40, 40, 40, 0.8);
-  padding: 0.3rem 2rem 0 2rem;
-  color: #fff;
+  font-size: 2.5rem;
 }
 
 h2, .h2 {
   font-size: 2rem;
-  text-align: center;
-  margin-top: 2rem;
 }
 
 h3, .h3 {
-  font-size: 1.8rem;
-  color: #790101;
-  text-align: center;
+  font-size: 1.75rem;
 }
 
 h4, .h4 {
@@ -4079,7 +4063,6 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #fff;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -4171,6 +4154,7 @@ input[type="button"].btn-block {
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding: 0.5rem 1rem;
 }
 
 .navbar > .container,
@@ -4366,7 +4350,6 @@ input[type="button"].btn-block {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    font-size: 1.2rem;
   }
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
@@ -4479,11 +4462,10 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  background: #fff;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -6586,7 +6568,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: var(--yellow) !important;
+  background-color: #f8f9fa !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -6611,10 +6593,6 @@ button.bg-dark:focus {
 
 .bg-transparent {
   background-color: transparent !important;
-}
-
-.bg-elmoGrey {
-    background: rgba(40, 40, 40, 0.8);
 }
 
 .border {
@@ -10058,10 +10036,3 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */

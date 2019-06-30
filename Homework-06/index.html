@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="assets/css/bootstrap.css">
-        <<link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="assets/js/bootstrap.js"></script>
         <link rel="shortcut icon" href="https://cdn.sesamestreet.org/sites/all/themes/sesametheme/favicon.ico" type="image/vnd.microsoft.icon">
@@ -120,6 +120,77 @@
                 <p>Elmo the Red Monster, Sesamestreet 4, 12345 Monstertown<br>
                    hello@elmo.mo
                 </p>
+
+                <!-- Button trigger modal -->
+                <button type="button" data-toggle="modal" data-target="#exampleModal">
+                  Before you ask...
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">This is a title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+
+                        <!-- Accorion in modal -->
+                        <div id="accordion">
+                          <div class="card">
+                            <div class="card-header" id="headingOne">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Elmo, who is your best friend?
+                                </button>
+                              </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                              <div class="card-body">
+                                Elmo says, thats the Cookie Monster, Ernie and Bert, Dorothy and for sure – You are his best friends are.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Elmo, what is your favourite ice cream flavour?
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                              <div class="card-body">
+                                  Elmo says, that every flavour which is red are his favourite flavours. e.g. Strawberry, Raspberry and watermelon. But he also loooooves cookie and cream when the cookie monster visited him.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Elmo, what was the best birthday present ever, ever, ever?
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                              <div class="card-body">
+                                Elmo said, hat his shiny red tricycle is the absolut best present he ever get.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </footer>
         </div>
 

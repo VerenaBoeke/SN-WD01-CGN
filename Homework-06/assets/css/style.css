@@ -1,87 +1,55 @@
 /*
 ** Google Fonts **
 font-family: 'Walter Turncoat', cursive;
+*/
 
 @import url('https://fonts.googleapis.com/css?family=Walter+Turncoat&display=swap');
 
-
-/*
+html {
+    font-family: 'Walter Turncoat', cursive;
+}
 
 body {
-    background: #282828;
-    margin: 0;
     font-family: 'Walter Turncoat', cursive;
-}
-
-
-h1 {
-    position: absolute;
-    width: 405px;
-    height: 50px;
-    left: 0;
-    bottom: 10px;
-    background: rgba(40, 40, 40, 0.8);
-    padding: 0px 30px;
     color: #fff;
+    background-color: #282828;
 }
-
-
-
-h2 {
-    margin: 0;
-    text-align: center;
-}
-
-
-nav {
-    height: 35px;
-    background: rgba(40, 40, 40, 0.8);
-    color: #fff;
-}
-
-nav a {
-    font-size: 22px;
-    color: #fff;
-    text-decoration: none;
-    margin: 0 0 0 30px;
-    padding: 10px;
-}
-
-nav a:hover {
-    font-size: 22px;
-    color: #000;
-    background-color: #fff;
-    text-decoration: none;
-}
-
-
-header {
-    height: 50px;
-}
-
-article {
-    color: #fff;
-}
-
 
 button {
-    padding: 10px 20px;
-    background-color: #790101;
-    color: #fff;
-    font-weight: bold;
-    tex-decoration: uppercase;
-    font-size: 20px;
-    font-family: 'Walter Turncoat', cursive;
-    margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #790101;
+  color: #fff;
+  text-decoration: uppercase;
+  font-size: 20px;
 }
 
-
-form p{
-    font-size: 14px;
-    line-height: 18px;
+form p {
+    color: #282828;
 }
 
-*/
+h1, .h1 {
+  font-size: 1.8rem;
+  position: absolute;
+  width: 405px;
+  height: 50px;
+  left: 0;
+  bottom: 10px;
+  background: rgba(40, 40, 40, 0.8);
+  padding: 0.3rem 2rem 0 2rem;
+  color: #fff;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.8rem;
+  color: #790101;
+  text-align: center;
+}
 
 iframe {
     margin: 0 auto;
@@ -90,6 +58,11 @@ iframe {
     width: 720px;
     height: 405px;
     border: none;
+}
+
+img {
+    width: 100%;
+    max-width: 960px;
 }
 
 svg {
@@ -117,6 +90,30 @@ footer a {
 
 /* ** Classes ** */
 
+.nav-link {
+  color: #fff;
+}
+
+.navbar {
+      padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  background: #fff;
+}
+
+.bg-elmoGrey {
+    background: rgba(40, 40, 40, 0.8);
+}
+
 .wrapper {
     margin: 0 auto;
     background-image: url("../img/background.png");
@@ -128,9 +125,6 @@ footer a {
 }
 
 /* Form */
-.red {
-
-}
 
 .formWrapper {
     margin:60px 0 100px 0;
@@ -154,7 +148,8 @@ input {
     background-color: white;
     -webkit-rtl-ordering: logical;
     cursor: text;
-    padding: 9px 200px 5px 9px;
+    padding: 9px 0 5px 9px;
+    width: 100%;
     border-width: 2px;
     border-style: inset;
     border-color: initial;
@@ -176,7 +171,7 @@ input {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: #790101;
+    background-color: #790101;ide
     transition-property: background-color;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
@@ -200,12 +195,68 @@ input {
     color: #fff;
 }
 
+.card {
+    background-color: #505050;
+}
+
+.modal-content {
+    background-color: #BA0100;
+}
+
+.card-header {
+    background-color: #282828;
+}
+
+.card-header a {
+    font-color: #fff;
+}
+
+.collapse {
+    background-color: #505050;
+    font-size: 1rem;
+}
+
+.btn-link {
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: uppercase;
+}
+
+.btn-link:hover {
+    color: #BA0100;
+}
+
 @media screen and (max-width: 700px) {
+
+    h1 {
+        position: relative;
+        width:100%;
+    }
 
     form {
         width: 100%;
         position: static;
 
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    .todo {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .navbar-nav {
+        margin-left: 10px;
     }
 
 }
