@@ -31,7 +31,6 @@ h1, .h1 {
   font-size: 1.8rem;
   position: absolute;
   width: 405px;
-  height: 50px;
   left: 0;
   bottom: 10px;
   background: rgba(40, 40, 40, 0.8);
@@ -230,11 +229,20 @@ button .collapse {
     height: 300px;
 }
 
+.navbar-toggler {
+    margin: 5px;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 999px) {
 
     h1 {
         position: relative;
         width:100%;
+        text align: center;
     }
 
     form {
@@ -261,6 +269,18 @@ button .collapse {
 
     .navbar-nav {
         margin-left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    body {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 5rem;
     }
 
 }
