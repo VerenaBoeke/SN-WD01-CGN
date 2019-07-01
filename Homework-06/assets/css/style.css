@@ -230,7 +230,7 @@ button .collapse {
     height: 300px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 999px) {
 
     h1 {
         position: relative;
