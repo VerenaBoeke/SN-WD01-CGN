@@ -1,0 +1,19 @@
+"""
+str_one = "Happy"
+str_two = "Day"
+
+print(str_one + str_two)  # result: HappyDay
+
+print(str_one + " " + str_two)  # result: Happy Day
+
+print("%s %s" % (str_one, str_two)) # result: Happy Day
+
+print("{0} {1}".format(str_one, str_two)) # result: Happy Day
+"""
+
+greeting = "Dia duit, "
+
+name = input("What is yourt Firstname?: ")
+
+print("{0} {1}".format(greeting, name))
+print("That's how you say 'Hello' in Gaeilge (Irish Galic)")

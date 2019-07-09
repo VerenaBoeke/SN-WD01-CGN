@@ -1,0 +1,3 @@
+cHa071Cs3n73Nc3 = input("Let me shrink your letters. Gimme a 'cHaOTic SEntenCe' ... and let the magic happen... : ")
+
+print(cHa071Cs3n73Nc3.lower())
