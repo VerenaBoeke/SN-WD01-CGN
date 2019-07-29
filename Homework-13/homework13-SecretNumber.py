@@ -1,7 +1,12 @@
+#coding=utf8
+
 #Imports
 import json
-import random
 from datetime import date
+
+from secretnumber import secret
+from topscore import get_topscore_list
+from result import result
 
 
 #JSON File "Highscore"
@@ -20,12 +25,7 @@ wrongGuesses = 0
 #Start the Game
 print("Welcome to 'Guess the Secret Number' But first...")
 
-
 #The Secret Number
-def secret(fromNum, toNum):
-   secretNum = random.randint(fromNum, toNum)
-   return secretNum
-
 secret = secret(fromNum, toNum)
 
 #Ask for guess and check about valid number
@@ -44,20 +44,11 @@ while True:
    except ValueError:
        print("Oops! That was no valid number. Try again...")
 
-
-class result():
-    def __init__(self, score, player_name, date):
-        self.score = score
-        self.player_name = player_name
-        self.date = date
-
 newGame = result(score=numGuess, player_name=player, date=str(today))
-
 
 #Define variable für JSON File
 listContent = {}
 listContent['games'] = []
-
 
 #Open and read JSON File
 def get_score_list():
@@ -67,7 +58,7 @@ def get_score_list():
 listContent = get_score_list()
 
 #Check Key in dict
-if(not "players" in listContent):
+if(not "games" in listContent):
     listContent['games'] = []
 
 #Get content for Score List
@@ -78,23 +69,10 @@ listContent['games'].append({
    "gTotal": newGame.score,
 })
 
-
 #Write Infos about the session in the JSON File
 with open(filename, 'w') as f:
    json.dump(listContent, f)
 
-
-#Get and Print the Top Score List
-def get_topscore_list(list):
-   global sorted
-   sorted = sorted(list, key = lambda i: i['gTotal'])
-   print("Top three Players: ")
-   countGames = 0
-
-   for game in sorted:
-        countGames = countGames + 1
-        print("#" + str(countGames) + " " + game["player"] + " with " + str(game["gTotal"]) + " attempts.")
-        if countGames == 3:
-            break
-
-get_topscore_list(listContent['games'])
+#Function for Top Score is imported from topscore.py
+if __name__ == '__main__':
+    get_topscore_list(listContent['games'])
