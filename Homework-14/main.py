@@ -7,7 +7,7 @@ def index():
     return render_template("index.html")
 
 @app.route("/impressum")#CONTROLLER
-def about_me():
+def impressum():
     return render_template("impressum.html")
 
 if __name__ == '__main__':
