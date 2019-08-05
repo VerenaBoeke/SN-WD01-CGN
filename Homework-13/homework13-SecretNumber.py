@@ -14,9 +14,6 @@ filename = "highscore.json"
 
 
 #Global Variables
-fromNum = 1
-toNum = 10
-today = date.today()
 player = input("Tell me your Player Name: ")
 numGuess = 0
 wrongGuesses = 0
@@ -25,17 +22,28 @@ wrongGuesses = 0
 #Start the Game
 print("Welcome to 'Guess the Secret Number' But first...")
 
-#The Secret Number
-secret = secret(fromNum, toNum)
+class game():
+    def __init__(self):
+        self.fromNum = 1
+        self.toNum = 10
+        self.today = date.today()
+
+        # The Secret Number
+        self.secret = secret(self.fromNum, self.toNum)
+game = game()
+
+print(game.secret)
+
+
 
 #Ask for guess and check about valid number
 while True:
    try:
-       UserGuess = int(input("Abracadabra, which number is in my mind? Tell me number between " + str(fromNum) + " and " + str(toNum) + ": "))
+       UserGuess = int(input("Abracadabra, which number is in my mind? Tell me number between " + str(game.fromNum) + " and " + str(game.toNum) + ": "))
        numGuess = numGuess + 1
-       if UserGuess < fromNum or UserGuess > toNum:
+       if UserGuess < game.fromNum or UserGuess > game.toNum:
            raise ValueError
-       elif int(UserGuess) == secret:
+       elif int(UserGuess) == game.secret:
            print("Uh wow! That is absolutly correct. Congrats my dear!")
            break
        else:
@@ -44,7 +52,7 @@ while True:
    except ValueError:
        print("Oops! That was no valid number. Try again...")
 
-newGame = result(score=numGuess, player_name=player, date=str(today))
+newGame = result(score=numGuess, player_name=player, date=str(game.today))
 
 #Define variable für JSON File
 listContent = {}
@@ -63,7 +71,7 @@ if(not "games" in listContent):
 
 #Get content for Score List
 listContent['games'].append({
-   "secretnumber": secret,
+   "secretnumber": game.secret,
    "date": str(newGame.date),
    "player": newGame.player_name,
    "gTotal": newGame.score,
